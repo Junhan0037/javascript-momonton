@@ -10,7 +10,7 @@ function getWeather(lat, lng) {
     }).then(function(json) { // 위의 response.json() 데이터네 network정보만 들어있기 때문에 한번 더 기다린다
         const temperature = json.main.temp;
         const place = json.name;
-        weather.innerText = `${temperature} @ ${place}`;
+        weather.innerText = `${temperature}°C @${place}`;
     });
 }
 

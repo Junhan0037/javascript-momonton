@@ -6,6 +6,14 @@ h1 {
     color: white;
 }
 
+.center {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 50px;
+}
+
 .hide{
     display: none;
 }
