@@ -4,6 +4,7 @@ const greeting = document.querySelector(".js-greetings");
 
 const USER_LS = "currentUser";
 const SHOWING_CN = "showing";
+const NAME = "name";
 
 function saveName(text) {
     localStorage.setItem(USER_LS, text);
@@ -24,7 +25,8 @@ function askForName() {
 function paintGreeting(text) { // 입력된 텍스트 보여주기 함수
     form.classList.remove(SHOWING_CN);
     greeting.classList.add(SHOWING_CN);
-    greeting.innerText = `Hello ${text}`;
+    greeting.classList.add(NAME);
+    greeting.innerText = `Hello, ${text}!`;
 }
 
 function loadName() {
